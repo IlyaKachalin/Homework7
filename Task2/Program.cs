@@ -45,7 +45,7 @@ try
     {
         string result = string.Empty;
 
-        if (rows < matrix.GetLength(0) && columns < matrix.GetLength(1)) Console.WriteLine(matrix[rows, columns]);
+        if (rows >= 0 && rows < matrix.GetLength(0) && columns >= 0 && columns < matrix.GetLength(1)) Console.WriteLine(matrix[rows, columns]);
         else Console.WriteLine("Элемента с указанными позициями не существует");
 
         return result;
